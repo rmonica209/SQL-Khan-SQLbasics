@@ -1,0 +1,5 @@
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO books VALUES (1, "Twilight", 2);
+INSERT INTO books VALUES (2, "House of Night", 4);
+INSERT INTO books VALUES (3, "Vampire Academy", 4);
