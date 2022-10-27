@@ -1,0 +1,26 @@
+/* Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items. */
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, "Dress", 10, 54.00);
+INSERT INTO store VALUES (2, "Skirt", 5, 64.00);
+INSERT INTO store VALUES (3, "Shorts", 50, 20.00);
+INSERT INTO store VALUES (4, "Pants", 6, 104.00);
+INSERT INTO store VALUES (5, "Jeans", 60, 298.00);
+INSERT INTO store VALUES (6, "Leggings", 7, 33.00);
+INSERT INTO store VALUES (7, "Socks", 77, 5.00);
+INSERT INTO store VALUES (8, "Cardigan", 8, 25.00);
+INSERT INTO store VALUES (9, "Jacket", 80, 500.00);
+INSERT INTO store VALUES (10, "Bathing Suit", 200, 54.00);
+INSERT INTO store VALUES (11, "Blazer", 100, 300.00);
+INSERT INTO store VALUES (12, "Shoes", 1000, 150.00);
+INSERT INTO store VALUES (13, "Scarf", 66, 99.00);
+INSERT INTO store VALUES (14, "Shirt", 88, 54.00);
+INSERT INTO store VALUES (15, "Gloves", 99, 24.00);
+
+SELECT * FROM store 
+ORDER BY price;
+
+SELECT SUM(quantity) FROM store;
